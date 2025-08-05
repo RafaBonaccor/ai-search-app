@@ -1,0 +1,150 @@
+🔍 Research Assistant CLI
+Uno strumento semplice per fare ricerche sul web in modo automatizzato usando AI e più motori di ricerca.
+
+Cos'è?
+Research Assistant CLI è un programma che ti aiuta a trovare risposte su qualsiasi argomento:
+
+Fa ricerche web su più motori contemporaneamente (come Google, Yahoo, Brave Search, ecc)
+
+Riassume le fonti e le cita nell’output
+
+Usa l’Intelligenza Artificiale (tramite Ollama) per darti risposte ben scritte e documentate
+
+Prerequisiti
+Prima di iniziare, assicurati di avere:
+
+Python 3.8 o superiore installato sul tuo computer
+
+Ollama installato e in esecuzione
+➡️ Scaricalo qui: https://ollama.com/download
+➡️ Avvialo (di solito si apre da solo, altrimenti lancia ollama da terminale)
+
+Una connessione internet
+
+Facoltativo:
+Puoi ottenere risultati migliori abilitando la ricerca con Brave Search
+
+Ottieni una API key gratuita da: https://search.brave.com/settings
+
+Salva la chiave come variabile d’ambiente:
+(Windows)
+
+arduino
+Copia
+Modifica
+set BRAVE_API_KEY=la_tua_api_key
+(Linux/Mac)
+
+arduino
+Copia
+Modifica
+export BRAVE_API_KEY=la_tua_api_key
+Installazione
+Scarica il file standalone_research.py nella tua cartella preferita
+
+(Consigliato) Crea un ambiente virtuale:
+
+bash
+Copia
+Modifica
+python -m venv venv
+source venv/bin/activate  # oppure venv\Scripts\activate su Windows
+Installa le librerie necessarie:
+
+bash
+Copia
+Modifica
+pip install requests python-dotenv duckduckgo-search
+Avvio rapido
+Avvia il programma dalla cartella dove hai scaricato il file:
+
+bash
+Copia
+Modifica
+python standalone_research.py
+Apparirà un menu come questo:
+
+markdown
+Copia
+Modifica
+🔍 Research Assistant CLI
+========================
+This tool performs AI-powered web research using multiple search engines.
+...
+Come funziona
+Scegli la modalità di ricerca
+
+Premi 1 per una ricerca veloce (opzioni di default)
+
+Premi 2 per configurare motori di ricerca, output, modalità dettagliata
+
+Premi 3 per uscire
+
+Inserisci la tua domanda o argomento
+Scrivi la tua query (esempio:
+
+nginx
+Copia
+Modifica
+Ultime novità sulla fusione nucleare
+) e premi invio.
+
+Attendi
+Il programma farà le ricerche, raccoglierà fonti, userà l’AI per riassumere e citare le fonti.
+
+Leggi la risposta
+Verrà mostrato:
+
+Un sommario della ricerca
+
+La risposta dell’AI con citazioni
+
+Le fonti usate
+
+Salva i risultati (facoltativo)
+Se lo desideri, puoi salvare i risultati in un file .json per consultarli in seguito.
+
+Esempi di uso
+Ricerca veloce:
+
+bash
+Copia
+Modifica
+python standalone_research.py "Intelligenza artificiale nelle scuole italiane"
+Modalità dettagliata:
+
+bash
+Copia
+Modifica
+python standalone_research.py
+# Poi scegli "2. Custom search" per configurare motori di ricerca e output.
+Domande frequenti
+Devo avere Ollama attivo?
+
+Sì, Ollama deve essere in esecuzione per generare le risposte AI.
+
+Devo avere una chiave Brave API?
+
+No, ma è consigliata per avere risultati migliori.
+
+Cosa fare se mi dice "Ollama service not found"?
+
+Avvia Ollama. Su Mac/Windows cerca "Ollama" tra le app o lancialo da terminale.
+
+Il programma si blocca o non trova risultati?
+
+Prova con una query più semplice. Alcuni motori a volte non rispondono o cambiano formato.
+
+Posso scegliere i motori di ricerca?
+
+Sì, in modalità "Custom search" puoi specificare (es: searx,brave,yahoo,startpage)
+
+Suggerimenti
+Fai domande chiare e specifiche per ottenere risposte migliori
+
+Prova più volte o con varianti della stessa domanda se non sei soddisfatto
+
+Supporto
+Per problemi tecnici o suggerimenti, apri una issue su GitHub o chiedi all’autore.
+
+Buone ricerche! 🚀
