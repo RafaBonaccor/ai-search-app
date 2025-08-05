@@ -21,52 +21,39 @@ Ollama installato e in esecuzione
 
 Una connessione internet
 
-Facoltativo:
-Puoi ottenere risultati migliori abilitando la ricerca con Brave Search
+I risultati migliori si ottengono abilitando la ricerca con Brave Search
 
 Ottieni una API key gratuita da: https://search.brave.com/settings
 
 Salva la chiave come variabile d’ambiente:
 (Windows)
 
-arduino
-Copia
-Modifica
+
 set BRAVE_API_KEY=la_tua_api_key
 (Linux/Mac)
 
-arduino
-Copia
-Modifica
+
 export BRAVE_API_KEY=la_tua_api_key
 Installazione
 Scarica il file standalone_research.py nella tua cartella preferita
 
 (Consigliato) Crea un ambiente virtuale:
 
-bash
-Copia
-Modifica
+
 python -m venv venv
 source venv/bin/activate  # oppure venv\Scripts\activate su Windows
 Installa le librerie necessarie:
 
-bash
-Copia
-Modifica
+
 pip install requests python-dotenv duckduckgo-search
 Avvio rapido
 Avvia il programma dalla cartella dove hai scaricato il file:
 
-bash
-Copia
-Modifica
+
 python standalone_research.py
 Apparirà un menu come questo:
 
-markdown
-Copia
-Modifica
+
 🔍 Research Assistant CLI
 ========================
 This tool performs AI-powered web research using multiple search engines.
@@ -83,9 +70,7 @@ Premi 3 per uscire
 Inserisci la tua domanda o argomento
 Scrivi la tua query (esempio:
 
-nginx
-Copia
-Modifica
+
 Ultime novità sulla fusione nucleare
 ) e premi invio.
 
@@ -107,15 +92,11 @@ Se lo desideri, puoi salvare i risultati in un file .json per consultarli in seg
 Esempi di uso
 Ricerca veloce:
 
-bash
-Copia
-Modifica
+
 python standalone_research.py "Intelligenza artificiale nelle scuole italiane"
 Modalità dettagliata:
 
-bash
-Copia
-Modifica
+
 python standalone_research.py
 # Poi scegli "2. Custom search" per configurare motori di ricerca e output.
 Domande frequenti
